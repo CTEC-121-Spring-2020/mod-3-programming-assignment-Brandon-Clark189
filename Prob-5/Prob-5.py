@@ -5,7 +5,12 @@
 # <YOUR NAME>
 
 def main():
-    x = eval(2)
-    print("x:", x)
+    try:
+        x = eval(4)
+        print("x:", x)
+
+    except:
+        print("TypeError, there must be a string, byte or code object. (Essentially, you need an input.)")
+        
 
 main()

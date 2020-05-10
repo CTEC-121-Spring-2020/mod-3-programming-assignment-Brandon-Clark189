@@ -2,7 +2,7 @@
 #   Programming Assignment 4
 #     Prob-4.py
 
-# <YOUR NAME>
+# Brandon Norton
 
 # Author: Bruce Elgort
 # Date: July 12, 2017
@@ -17,6 +17,7 @@ calculates the cost of an order. Name your function
 coffeeProcessor()
 """
 
+
 def coffeeProcessor():
 
     # define variables
@@ -24,20 +25,27 @@ def coffeeProcessor():
     priceOfCoffee = 16.50
 
     # get number of pounds from user
-    quantity = evaluate(input("How many pounds of coffee would you like to order? )
+    # added missing " at end of order?
+    # added missing )
+    quantity = int(input("How many pounds of coffee would you like to order?"))
     
     # Check number of pounds ordered
     # If less than or equal to 10 pounds we must charge for shipping
+    #added missing :
     if quantity <= 10:
         shippingPerPound = .76
-    else
+    else:
         shippingPerPound = 0      
 
     # Calculate cost of order
-    costOfOrder = (quantity * priceOfCoffee) + (quntity * shippingPerPound) + overHead
+    # Fixed quntity to quantity
+    costOfOrder = (quantity * priceOfCoffee) + (quantity * shippingPerPound) + overHead
 
     # Print result
-    print(The cost of the order is:",costOfOrder)
+    # added "" to "The cost of the order is:"
+   
+    print("The cost of the order is:", costOfOrder)
 
 # start the program
-gocoffeeProcessor()
+# changed gocoffeeProcessor to coffeeProcessor
+coffeeProcessor()
